@@ -209,7 +209,7 @@ form
     font-size: 20px;
 }
 
-@media(max-width: 728px)
+@media only screen and (max-width: 728px) 
 {
     .row{
         flex-direction: column;
