@@ -1,4 +1,7 @@
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Roboto:wght@100;400;700&display=swap');
+
+
+
 *
 {
     margin: 0;
@@ -68,6 +71,10 @@ button
     cursor: pointer;
 }
 
+.pc
+{
+    max-width: 400px;
+}
 .row
 {
     display: flex;
@@ -200,4 +207,90 @@ form
 .copyright
 {
     font-size: 20px;
+}
+
+@media(max-width: 728px)
+{
+    .row{
+        flex-direction: column;
+    }
+
+    .lander
+    {
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 8px;
+    }
+
+    h1
+    {
+        padding-top: 20px;
+        font-size: 50px;
+        text-align:center;
+    }
+
+    .subheading
+    {
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    .start
+    {
+        max-width: 200px;
+        margin: auto;
+    }
+
+    ul
+    {
+        display: none;
+    }    
+
+    .logo
+    {
+        max-width: 220px;
+        margin: 0 auto;
+    }
+
+    .pc 
+    {
+        min-width: 280px;
+    }
+
+    .section__description
+    {
+        flex-direction: column;
+    }
+   
+    .about__img--wrapper
+    {
+        padding: 0 16px;
+    }
+
+    form
+    {
+            padding: 0 24px;
+    }
+
+    .footer__image
+    {
+        padding: 0  24px;;
+    }
+
+    footer
+    {
+        padding-bottom: 12px;
+    }
+
+    .footer__link
+    {
+        padding-left: 8px;
+        font-size: 16px;
+    }
+
+    .copyright
+    {
+        font-size: 16px;
+    }
 }
